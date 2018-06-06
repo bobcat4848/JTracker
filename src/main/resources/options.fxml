@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane xmlns:fx="http://javafx.com/fxml/1" prefHeight="100.0" prefWidth="280.0" style="-fx-background-color: #8490a3;">
+   <children>
+      <TextField fx:id="timeFrequencyField" layoutX="14.0" layoutY="50.0" promptText="Time between Checks" />
+      <CheckBox fx:id="notifySoundBox" layoutX="14.0" layoutY="14.0" text="Notification Sound" />
+      <Button fx:id="doneButton" layoutX="221.0" layoutY="50.0" mnemonicParsing="false" text="Done" />
+   </children>
+</Pane>

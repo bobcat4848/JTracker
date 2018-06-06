@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tech.bobcat.jtracker.ui.MainController">
+    <Pane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #8490a3;">
+        <children>
+            <Pane prefHeight="70.0" prefWidth="600.0" style="-fx-background-color: #4286f4; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);;">
+                <children>
+                    <Button fx:id="createButton" onAction="#openCreate" layoutX="14.0" layoutY="23.0" mnemonicParsing="false" text="New Website"/>
+                    <Button fx:id="optionsButton" onAction="#openOptions" layoutX="528.0" layoutY="23.0" mnemonicParsing="false" text="Options"/>
+                </children>
+            </Pane>
+            <TableView fx:id="websiteTable" layoutX="14.0" layoutY="81.0" prefHeight="309.0" prefWidth="573.0">
+                <columns>
+                    <TableColumn fx:id="nameColumn" prefWidth="119.0" text="Name" />
+                    <TableColumn fx:id="urlColumn" prefWidth="275.0" text="URL" />
+                    <TableColumn fx:id="lastChangeColumn" prefWidth="128.0" text="Last Change" />
+                    <TableColumn fx:id="alertColumn" prefWidth="50.0" text="Alert" />
+                </columns>
+            </TableView>
+        </children>
+    </Pane>
+</VBox>
+

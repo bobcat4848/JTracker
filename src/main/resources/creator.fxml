@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane xmlns:fx="http://javafx.com/fxml" prefHeight="210.0" prefWidth="280.0" style="-fx-background-color: #8490a3;">
+   <children>
+      <TextField fx:id="nameText" layoutX="31.0" layoutY="28.0" promptText="Name">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="urlText" layoutX="31.0" layoutY="75.0" promptText="URL">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <CheckBox fx:id="alertBox" layoutX="31.0" layoutY="138.0" text="Alert" />
+      <Button fx:id="doneButton" layoutX="191.0" layoutY="155.0" mnemonicParsing="false" text="Done" />
+   </children>
+</Pane>
