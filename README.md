@@ -7,18 +7,31 @@ JTracker allows you to store an infinite number of websites to keep track of. Ad
 - File reading and writing seems to keep UI from working faster.
 
 ### TODO:
-- Add options panel that will allow users to control certain aspects of the program like how frequent it should check if there is a change to a website.
 - Being able to remove websites from within UI
+- Edit websites through UI
+- Implement the "Last Change" area in the table
 - Look into speeding up UI, it's rather slow right now for some reason
 - Replace alert boolean in table with a checkbox
 - Clicking a link twice in the table will open it
 
 # Future Plans
-- Add screenshot region of website to see if any changes occur in a certain region of a webpage.
+- Per website timer, each website can be set to a specific time to be checked. So you can check one more frequently than another.
+- Instead of comparing html of pages, compare with a screenshot.
+- Add webhook notifications for applications such as discord and slack
 
 # Libraries Used
-- Jsoup - https://jsoup.org/ Allowed me to easily get the html document of a webpage
-- yamlBeans - https://github.com/EsotericSoftware/yamlbeans Handles the reading and writing of where the websites are stored
+- Jsoup - https://jsoup.org/ 
+    - Easily get the html document of a webpage
+- yamlBeans - https://github.com/EsotericSoftware/yamlbeans 
+    - Reading and writing of where the websites are stored
+- TrayNotification - https://github.com/PlusHaze/TrayNotification
+    - Shows notifications on platforms that do not support the java system tray.
+
+# Running on Linux
+If you are unable to run this app on a system running linux, make sure that you have
+openJFX installed alongside openJDK if you do not have oracle java.
+
+The command to get openJFX on Ubuntu is `sudo apt-get install openjfx`
 
 # License
 JTracker is licensed under the MIT license
