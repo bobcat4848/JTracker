@@ -3,7 +3,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tech.bobcat.jtracker.ui.MainController">
+<VBox fx:id="root" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tech.bobcat.jtracker.ui.MainController">
     <Pane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #8490a3;">
         <children>
             <Pane prefHeight="70.0" prefWidth="600.0" style="-fx-background-color: #4286f4; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);;">

@@ -23,6 +23,7 @@ import static tech.bobcat.jtracker.Main.manager;
 
 public class MainController extends Controller implements Initializable {
 
+    @FXML private Parent root;
     @FXML private TableView<Website> websiteTable;
     @FXML private TableColumn nameColumn;
     @FXML private TableColumn urlColumn;
@@ -82,6 +83,7 @@ public class MainController extends Controller implements Initializable {
     private void show(FXMLLoader loader, Controller popupController) {
         try {
             Parent layout = loader.load();
+            Stage stage = (Stage) root.getScene().getWindow();
             Scene scene = new Scene(layout);
             // this is the popup stage
             Stage popupStage = new Stage();
@@ -91,6 +93,8 @@ public class MainController extends Controller implements Initializable {
                 popupStage.initOwner(main.getPrimaryStage());
             }
             popupStage.initModality(Modality.WINDOW_MODAL);
+            popupStage.setX(stage.getX()+150);
+            popupStage.setY(stage.getY()+90);
             popupStage.setAlwaysOnTop(true);
             popupStage.setResizable(false);
             popupStage.getIcons().add(new Image("/icon.png"));

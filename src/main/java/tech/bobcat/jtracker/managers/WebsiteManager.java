@@ -4,11 +4,12 @@ import com.esotericsoftware.yamlbeans.YamlException;
 import com.esotericsoftware.yamlbeans.YamlWriter;
 import org.jsoup.Jsoup;
 import tech.bobcat.jtracker.data.Website;
-import tech.bobcat.jtracker.util.NotificationHelper;
 
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
+
+import static tech.bobcat.jtracker.Main.manager;
 
 /**
  * This class is responsible for managing all the websites and making sure that the list
@@ -71,7 +72,7 @@ public class WebsiteManager extends WriterManager {
                 for(Website web : websites) {
                     if (web.getAlert()) {
                         if (!Jsoup.connect(web.getUrl()).get().equals(web.getDocument())) {
-                            NotificationHelper.showNotification("There has been an update to the website, " + web.getName());
+                            manager.notificationManager.showNotification("There has been an update to, " + web.getName());
                         }
                     }
                 }
@@ -86,7 +87,8 @@ public class WebsiteManager extends WriterManager {
             Jsoup.connect(website.getUrl()).get();
             websites.add(website);
         } catch (IOException ex) {
-            NotificationHelper.showInvalidURL();
+            // TODO: Make this notification a popup window instead of a popup message
+            manager.notificationManager.showNotification("Cannot add website!");
         }
     }
 
