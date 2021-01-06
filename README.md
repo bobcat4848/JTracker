@@ -34,11 +34,8 @@ You must be using Java Version 8
 - TrayNotification - https://github.com/PlusHaze/TrayNotification
     - Shows notifications on platforms that do not support the java system tray.
 
-# Running on Windows
-If you would like to directly download this, follow the download link here: https://drive.google.com/file/d/1APHfpeLy9p2YDlaITlyPnfdqv6lpzXw-/view?usp=sharing 
-
-
-Otherwise, clone the repository, have JRE 8, JDK 8, and maven binaries installed, and run the code using the maven command "mvn clean compile assembly:single"
+# Running Source Code on Windows
+Clone the repository, have JRE 8, JDK 8, and maven binaries installed, and run the code using the maven command "mvn clean compile assembly:single"
 
 If you would like to compile easier, use IntelliJ and use the maven right-side toolbar to run the maven commands.
 
