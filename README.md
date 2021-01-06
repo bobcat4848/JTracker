@@ -3,6 +3,11 @@
 # Introduction
 JTracker allows you to store an infinite number of websites to keep track of. Add a website that you are looking at to see if any changes occur. This application is great if you're wanting to see if any job openings become available, sales on an online store, or new news coming up.
 
+### Want to try this software out without having to compile? Download the .jar here:
+https://drive.google.com/file/d/1APHfpeLy9p2YDlaITlyPnfdqv6lpzXw-/view?usp=sharing
+
+You must be using Java Version 8
+
 ## Limitations
 - File reading and writing seems to keep UI from working faster.
 
@@ -20,6 +25,8 @@ JTracker allows you to store an infinite number of websites to keep track of. Ad
 - Add webhook notifications for applications such as discord and slack
 
 # Libraries Used
+- JavaFX: https://docs.oracle.com/javafx/2/overview/jfxpub-overview.htm
+- Gluon FX Scene Builder: https://gluonhq.com/products/scene-builder/
 - Jsoup - https://jsoup.org/ 
     - Easily get the html document of a webpage
 - yamlBeans - https://github.com/EsotericSoftware/yamlbeans 
@@ -27,13 +34,18 @@ JTracker allows you to store an infinite number of websites to keep track of. Ad
 - TrayNotification - https://github.com/PlusHaze/TrayNotification
     - Shows notifications on platforms that do not support the java system tray.
 
-# Running on Linux
-If you are unable to run this app on a system running linux, make sure that you have
-openJFX installed alongside openJDK if you do not have oracle java.
+# Running on Windows
+If you would like to directly download this, follow the download link here: https://drive.google.com/file/d/1APHfpeLy9p2YDlaITlyPnfdqv6lpzXw-/view?usp=sharing 
 
-The command to get openJFX on Ubuntu is `sudo apt-get install openjfx`
+
+Otherwise, clone the repository, have JRE 8, JDK 8, and maven binaries installed, and run the code using the maven command "mvn clean compile assembly:single"
+
+If you would like to compile easier, use IntelliJ and use the maven right-side toolbar to run the maven commands.
 
 # License
 JTracker is licensed under the MIT license
 
 Copyright (C) 2018 Jacob Cuomo
+
+
+
