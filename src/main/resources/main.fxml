@@ -9,7 +9,7 @@
             <Pane prefHeight="70.0" prefWidth="600.0" style="-fx-background-color: #4286f4; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);;">
                 <children>
                     <Button fx:id="createButton" onAction="#openCreate" layoutX="14.0" layoutY="23.0" mnemonicParsing="false" text="New Website"/>
-                    <Button fx:id="optionsButton" onAction="#openOptions" layoutX="528.0" layoutY="23.0" mnemonicParsing="false" text="Options"/>
+                    <Button fx:id="optionsButton" onAction="#openOptions" layoutX="520.0" layoutY="23.0" mnemonicParsing="false" text="Options"/>
                 </children>
             </Pane>
             <TableView fx:id="websiteTable" layoutX="14.0" layoutY="81.0" prefHeight="309.0" prefWidth="573.0">
